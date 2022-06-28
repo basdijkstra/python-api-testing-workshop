@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?><testsuites><testsuite name="pytest" errors="0" failures="1" skipped="0" tests="1" time="0.869" timestamp="2022-06-28T16:43:59.007864" hostname="LAPTOP-QNOKRTD7"><testcase classname="test_basic_api" name="test_graphql" time="0.414"><failure message="assert 200 == 201&#10; +  where 200 = &lt;Response [200]&gt;.status_code">def test_graphql():
+        response = requests.post('https://api.spacex.land/graphql/', json=payload)
+&gt;       assert response.status_code == 201
+E       assert 200 == 201
+E        +  where 200 = &lt;Response [200]&gt;.status_code
+
+test_basic_api.py:22: AssertionError</failure></testcase></testsuite></testsuites>
